@@ -1,0 +1,1059 @@
+@charset "UTF-8";
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 13, ../sass/share/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 31, ../sass/share/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 39, ../sass/share/_normalize.scss */
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 48, ../sass/share/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 61, ../sass/share/_normalize.scss */
+figcaption, figure, main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 70, ../sass/share/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 79, ../sass/share/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 93, ../sass/share/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 108, ../sass/share/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/* line 113, ../sass/share/_normalize.scss */
+a:active, a:hover {
+  outline-width: 0;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 128, ../sass/share/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 141, ../sass/share/_normalize.scss */
+b, strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 149, ../sass/share/_normalize.scss */
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 158, ../sass/share/_normalize.scss */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 169, ../sass/share/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 177, ../sass/share/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 186, ../sass/share/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 195, ../sass/share/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 202, ../sass/share/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 206, ../sass/share/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 217, ../sass/share/_normalize.scss */
+audio, video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 225, ../sass/share/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 234, ../sass/share/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 242, ../sass/share/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 254, ../sass/share/_normalize.scss */
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 270, ../sass/share/_normalize.scss */
+button, input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 280, ../sass/share/_normalize.scss */
+button, select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 291, ../sass/share/_normalize.scss */
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, ../sass/share/_normalize.scss */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 309, ../sass/share/_normalize.scss */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 317, ../sass/share/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 330, ../sass/share/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, ../sass/share/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 361, ../sass/share/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 370, ../sass/share/_normalize.scss */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 382, ../sass/share/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 392, ../sass/share/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/* line 397, ../sass/share/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 411, ../sass/share/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 426, ../sass/share/_normalize.scss */
+details, menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 434, ../sass/share/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 445, ../sass/share/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 453, ../sass/share/_normalize.scss */
+template, [hidden] {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 1, ../sass/share/_reset-self.scss */
+body {
+  font-family: Verdana, Arial, Helvetica, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  color: #595757;
+  line-height: 1.8;
+  font-size: 15px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* line 9, ../sass/share/_reset-self.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 12, ../sass/share/_reset-self.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, ../sass/share/_reset-self.scss */
+i {
+  font-style: normal;
+}
+
+/* line 20, ../sass/share/_reset-self.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* line 26, ../sass/share/_reset-self.scss */
+button, input, optgroup, select, textarea {
+  font-family: Verdana, Arial, Helvetica, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  vertical-align: middle;
+  outline: none;
+}
+
+/* line 2, ../sass/tool/extend/_after-cb.scss */
+.body-wrap:after, .body-wrap .main-body:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* line 1, ../sass/share/from/_checkbox.scss */
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/* line 5, ../sass/share/from/_checkbox.scss */
+fieldset legend {
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  line-height: 0;
+}
+/* line 15, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBox, fieldset.RadioBox {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+/* line 19, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput, fieldset.RadioBoxinput {
+  display: inline-block;
+}
+/* line 21, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput[type="checkbox"], fieldset.CheckBoxinput[type="radio"], fieldset.RadioBoxinput[type="checkbox"], fieldset.RadioBoxinput[type="radio"] {
+  display: none;
+}
+/* line 23, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput[type="checkbox"] + label, fieldset.CheckBoxinput[type="radio"] + label, fieldset.RadioBoxinput[type="checkbox"] + label, fieldset.RadioBoxinput[type="radio"] + label {
+  cursor: pointer;
+}
+/* line 25, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput[type="checkbox"] + label span, fieldset.CheckBoxinput[type="radio"] + label span, fieldset.RadioBoxinput[type="checkbox"] + label span, fieldset.RadioBoxinput[type="radio"] + label span {
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  background: url(../images/icon/shear/icon-input.png) no-repeat;
+  display: inline-block;
+}
+/* line 37, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput[type="checkbox"] + label span, fieldset.RadioBoxinput[type="checkbox"] + label span {
+  background-position: left top;
+}
+/* line 42, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput[type="checkbox"]:checked + label span, fieldset.RadioBoxinput[type="checkbox"]:checked + label span {
+  background-position: -19px top;
+}
+/* line 49, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput[type="radio"] + label span, fieldset.RadioBoxinput[type="radio"] + label span {
+  background-position: -38px top;
+}
+/* line 54, ../sass/share/from/_checkbox.scss */
+fieldset.CheckBoxinput[type="radio"]:checked + label span, fieldset.RadioBoxinput[type="radio"]:checked + label span {
+  background-position: -57px top;
+}
+
+/* line 1, ../sass/share/_pattern.scss */
+html {
+  height: 100%;
+}
+/* line 3, ../sass/share/_pattern.scss */
+html body {
+  height: 100%;
+}
+
+/* line 7, ../sass/share/_pattern.scss */
+.wrap-max {
+  width: 100%;
+}
+/* line 9, ../sass/share/_pattern.scss */
+.wrap-max .area-body {
+  width: 100%;
+  max-width: 970px;
+  margin: auto;
+  padding: 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 970px) {
+  /* line 17, ../sass/share/_pattern.scss */
+  .pc-none {
+    display: none;
+  }
+}
+
+/* line 22, ../sass/share/_pattern.scss */
+.mobile-none {
+  display: none;
+}
+@media screen and (min-width: 970px) {
+  /* line 22, ../sass/share/_pattern.scss */
+  .mobile-none {
+    display: block;
+  }
+}
+
+/* line 29, ../sass/share/_pattern.scss */
+.btn {
+  background-color: #1389b0;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 19px;
+  padding: 0 10px;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 41, ../sass/share/_pattern.scss */
+.btn:hover {
+  background-color: #219ac2;
+}
+
+/* line 1, ../sass/share/_header.scss */
+.header-wrap {
+  background: #fff;
+  height: 50px;
+  position: fixed;
+  z-index: 100;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+}
+/* line 8, ../sass/share/_header.scss */
+.header-wrap .logo img {
+  width: auto;
+  height: 50px;
+}
+
+/* line 1, ../sass/share/_footer.scss */
+.footer-wrap {
+  height: 35px;
+  background: url(footer-wrap.png) repeat;
+  position: fixed;
+  bottom: 0;
+}
+/* line 6, ../sass/share/_footer.scss */
+.footer-wrap .copyright {
+  color: #fff;
+  font-size: 13px;
+  line-height: 35px;
+  text-align: center;
+}
+
+/* line 1, ../sass/main/_main.scss */
+.body-wrap {
+  padding-bottom: 35px;
+  height: calc(100% - 50px);
+}
+/* line 7, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+/*   background: url(/casso335/images/bg/bg-FFF30.png) repeat; */
+  padding: 7px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 15, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box {
+  padding: 10px 20px 20px 20px;
+  background: #fff;
+  text-align: center;
+  font-size: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/* line 22, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box span {
+  display: inline-block;
+}
+/* line 25, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box > .title {
+  font-size: 21px;
+  font-weight: bold;
+  position: relative;
+  line-height: 30px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+/* line 32, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box > .title:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: #d4d4d4;
+}
+/* line 42, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block {
+  margin: 10px auto 0px auto;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  font-size: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 50, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block .title {
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  color: #595757;
+  display: inline-block;
+  float: left;
+  text-align: right;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 63, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block input {
+  width: calc(100% - 90px);
+  height: 40px;
+  line-height: 40px;
+  line-height: 25px\9;
+  display: inline-block;
+  border: solid 2px #d4d4d4;
+  padding: 5px 10px;
+  float: left;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 77, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block input[type="radio"] {
+  width: auto;
+  height: auto;
+  float: none;
+}
+/* line 83, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block .verify-code-img {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  float: left;
+  padding-left: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 90, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block  {
+  width: 100%;
+  height: 100%;
+}
+/* line 96, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block button.link {
+  display: inline-block;
+  line-height: 40px;
+  margin: 0 10px;
+  color: #d5200f;
+  font-size: 15px;
+}
+/* line 105, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.password-box input {
+  width: calc(100% - 90px - 80px);
+  max-width: 100px \9;
+  min-width: 70px;
+}
+/* line 112, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.remark {
+  border-top: solid 1px #ccc;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+/* line 116, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.remark > span {
+  display: inline-block;
+}
+/* line 121, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.radio-box .radio-block {
+  margin: 0 5px;
+  display: inline-block;
+}
+/* line 124, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.radio-box .radio-block > input {
+  border: 0;
+}
+/* line 129, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.OTP-option {
+  height: 40px;
+  display: none;
+}
+/* line 132, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.OTP-option select {
+  width: calc(100% - 145px);
+  width: 40% \9;
+  height: 100%;
+  vertical-align: middle;
+  float: left;
+  display: table-cell;
+}
+/* line 141, ../sass/main/_main.scss */
+.body-wrap .main-body .login-area .login-box .login-block.OTP-option button {
+  max-width: 135px;
+  width: 55% \9;
+  margin-left: 10px;
+  float: left;
+  display: inline-block;
+}
+
+/* line 1, ../sass/share/_main-color-page.scss */
+body {
+  background-color: #d2cccc;
+/*   background: url(footer-wrap.png) repeat; */
+}
+/* line 5, ../sass/share/_main-color-page.scss */
+body .body-wrap .main-body {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  top: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* line 19, ../sass/share/_main-color-page.scss */
+body .body-wrap .main-body .login-area .login-box > .title {
+  color: #1389b0;
+}
+/* line 24, ../sass/share/_main-color-page.scss */
+body .body-wrap .main-body .login-area .login-box .login-block input:focus {
+  border-color: #56b8d8;
+}
+/* line 28, ../sass/share/_main-color-page.scss */
+body .body-wrap .main-body .login-area .login-box .login-block a {
+  color: #0ea0cc;
+}
+/* line 30, ../sass/share/_main-color-page.scss */
+body .body-wrap .main-body .login-area .login-box .login-block a:hover {
+  color: #d42d45;
+}
+/* line 39, ../sass/share/_main-color-page.scss */
+body.gray {
+  background-color: #d2cccc;
+}
+@media screen and (min-width: 768px) {
+  /* line 42, ../sass/share/_main-color-page.scss */
+  body.gray .body-wrap .main-body {
+    top: 20px;
+  }
+}
+/* line 49, ../sass/share/_main-color-page.scss */
+body.gray .body-wrap .main-body .login-area .login-box > .title {
+  color: #1389b0;
+}
+/* line 54, ../sass/share/_main-color-page.scss */
+body.gray .body-wrap .main-body .login-area .login-box .login-block input:focus {
+  border-color: #56b8d8;
+}
+/* line 58, ../sass/share/_main-color-page.scss */
+body.gray .body-wrap .main-body .login-area .login-box .login-block a {
+  color: #0ea0cc;
+}
+/* line 60, ../sass/share/_main-color-page.scss */
+body.gray .body-wrap .main-body .login-area .login-box .login-block a:hover {
+  color: #d42d45;
+}
+/* line 70, ../sass/share/_main-color-page.scss */
+body.blue {
+  background-color: #86a4b4;
+}
+@media screen and (min-width: 768px) {
+  /* line 73, ../sass/share/_main-color-page.scss */
+  body.blue .body-wrap .main-body {
+    top: 20px;
+  }
+}
+/* line 80, ../sass/share/_main-color-page.scss */
+body.blue .body-wrap .main-body .login-area .login-box > .title {
+  color: #1d89ce;
+}
+/* line 85, ../sass/share/_main-color-page.scss */
+body.blue .body-wrap .main-body .login-area .login-box .login-block input:focus {
+  border-color: #66c3ff;
+}
+/* line 89, ../sass/share/_main-color-page.scss */
+body.blue .body-wrap .main-body .login-area .login-box .login-block a {
+  color: #0ea0cc;
+}
+/* line 91, ../sass/share/_main-color-page.scss */
+body.blue .body-wrap .main-body .login-area .login-box .login-block a:hover {
+  color: #d42d45;
+}
+/* line 101, ../sass/share/_main-color-page.scss */
+body.green {
+  background-color: #569f8b;
+}
+@media screen and (min-width: 768px) {
+  /* line 104, ../sass/share/_main-color-page.scss */
+  body.green .body-wrap .main-body {
+    top: 20px;
+  }
+}
+/* line 111, ../sass/share/_main-color-page.scss */
+body.green .body-wrap .main-body .login-area .login-box > .title {
+  color: #0c91b8;
+}
+/* line 116, ../sass/share/_main-color-page.scss */
+body.green .body-wrap .main-body .login-area .login-box .login-block input:focus {
+  border-color: #2eb5dd;
+}
+/* line 120, ../sass/share/_main-color-page.scss */
+body.green .body-wrap .main-body .login-area .login-box .login-block a {
+  color: #0ea0cc;
+}
+/* line 122, ../sass/share/_main-color-page.scss */
+body.green .body-wrap .main-body .login-area .login-box .login-block a:hover {
+  color: #d42d45;
+}
+/* line 132, ../sass/share/_main-color-page.scss */
+body.purple {
+  background-color: #271c42;
+}
+@media screen and (min-width: 768px) {
+  /* line 135, ../sass/share/_main-color-page.scss */
+  body.purple .body-wrap .main-body {
+    top: 20px;
+  }
+}
+/* line 142, ../sass/share/_main-color-page.scss */
+body.purple .body-wrap .main-body .login-area .login-box > .title {
+  color: #efaa25;
+}
+/* line 147, ../sass/share/_main-color-page.scss */
+body.purple .body-wrap .main-body .login-area .login-box .login-block input:focus {
+  border-color: #f7c461;
+}
+/* line 151, ../sass/share/_main-color-page.scss */
+body.purple .body-wrap .main-body .login-area .login-box .login-block a {
+  color: #0ea0cc;
+}
+/* line 153, ../sass/share/_main-color-page.scss */
+body.purple .body-wrap .main-body .login-area .login-box .login-block a:hover {
+  color: #d42d45;
+}
+/* line 163, ../sass/share/_main-color-page.scss */
+body.yellow {
+  background-color: #f7cd72;
+}
+@media screen and (min-width: 768px) {
+  /* line 166, ../sass/share/_main-color-page.scss */
+  body.yellow .body-wrap .main-body {
+    top: 50px;
+  }
+}
+/* line 173, ../sass/share/_main-color-page.scss */
+body.yellow .body-wrap .main-body .login-area .login-box > .title {
+  color: #0067a9;
+}
+/* line 178, ../sass/share/_main-color-page.scss */
+body.yellow .body-wrap .main-body .login-area .login-box .login-block input:focus {
+  border-color: #57b0e3;
+}
+/* line 182, ../sass/share/_main-color-page.scss */
+body.yellow .body-wrap .main-body .login-area .login-box .login-block a {
+  color: #0ea0cc;
+}
+/* line 184, ../sass/share/_main-color-page.scss */
+body.yellow .body-wrap .main-body .login-area .login-box .login-block a:hover {
+  color: #d42d45;
+}
+/* line 194, ../sass/share/_main-color-page.scss */
+body .btn {
+  background-color: #1389b0;
+}
+/* line 196, ../sass/share/_main-color-page.scss */
+body .btn:hover {
+  background-color: #219ac2;
+}
+/* line 201, ../sass/share/_main-color-page.scss */
+body.gray .btn {
+  background-color: #1389b0;
+}
+/* line 203, ../sass/share/_main-color-page.scss */
+body.gray .btn:hover {
+  background-color: #219ac2;
+}
+/* line 209, ../sass/share/_main-color-page.scss */
+body.blue .btn {
+  background-color: #1d89ce;
+}
+/* line 211, ../sass/share/_main-color-page.scss */
+body.blue .btn:hover {
+  background-color: #2691d5;
+}
+/* line 217, ../sass/share/_main-color-page.scss */
+body.green .btn {
+  background-color: #0c91b8;
+}
+/* line 219, ../sass/share/_main-color-page.scss */
+body.green .btn:hover {
+  background-color: #109dc7;
+}
+/* line 225, ../sass/share/_main-color-page.scss */
+body.purple .btn {
+  background-color: #efaa25;
+}
+/* line 227, ../sass/share/_main-color-page.scss */
+body.purple .btn:hover {
+  background-color: #f5b12e;
+}
+/* line 233, ../sass/share/_main-color-page.scss */
+body.yellow .btn {
+  background-color: #0067a9;
+}
+/* line 235, ../sass/share/_main-color-page.scss */
+body.yellow .btn:hover {
+  background-color: #0a72b5;
+}
+
+#captcha-img{
+	margin-left:10px;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	position: relative;
+	margin-top: -40px \9;
+	margin-left: 200px \9;
+}
+
+
+#lblMsg .alert-danger {
+	background-color: #f2dede;
+}

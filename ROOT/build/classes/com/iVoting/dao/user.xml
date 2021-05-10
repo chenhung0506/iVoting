@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="user">
+
+	<select id="getUser" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+		SELECT * 
+		  FROM Community.USER_ROLE R
+		  LEFT JOIN Community.USER_ U ON R.USER_ID = U.USER_ID 
+		 WHERE 1=1
+		   AND STATUS = '1'
+		   <!-- 
+		 <isNotEmpty property="ACCOUNT" prepend="AND">
+			U.ACCOUNT = #ACCOUNT#
+		 </isNotEmpty>
+		 <isNotEmpty property="PASSWORD" prepend="AND">
+			U.PASSWORD = #PASSWORD#
+		 </isNotEmpty>
+		  -->
+	</select>
+	
+	<update id="updateUser" parameterClass="java.util.HashMap">
+		UPDATE Community.USER_
+		   SET STATUS='0'
+		 WHERE 1=1
+		   AND USER_ID=#USER_ID#
+
+	</update>
+
+<!-- 	<update id="insertUser" parameterClass="java.util.HashMap"> -->
+<!-- 		INSERT INTO Community.USER_ -->
+<!-- 		( ACCOUNT, PASSWORD, PASSWORD_HINT, NAME, JOIN_DATE) -->
+<!-- 		VALUES( #ACCOUNT#, #PASSWORD#, #PASSWORD_HINT#, #NAME#, CURDATE()); -->
+<!-- 	</update> -->
+<!--
+	create table Community.USER_(
+	   U_ID INT NOT NULL AUTO_INCREMENT,
+	   ACCOUNT VARCHAR(100) NOT NULL,
+	   PASSWORD VARCHAR(100) NOT NULL,
+	   PASSWORD_HINT VARCHAR(100) NOT NULL,
+	   NAME VARCHAR(100) NOT NULL,
+	   JOIN_DATE DATE,
+	   PRIMARY KEY ( U_ID )
+	);
+create table Community.USER_ROLE(
+	USER_ID INT NOT NULL,
+	ROLE_ID VARCHAR(10) NOT NULL,
+	PRIMARY KEY ( USER_ID, ROLE_ID )
+);
+
+-->
+	<update id="insertUser" parameterClass="com.iVoting.dto.UserDTO">
+		INSERT INTO Community.USER_
+		( ACCOUNT, PASSWORD, PASSWORD_HINT, NAME, JOIN_DATE)
+		VALUES( #account#, #password#, #passwordHint#, #name#, CURDATE());
+	</update>
+	
+<!-- 	<update id="insertUserRole" parameterClass="java.util.HashMap"> -->
+<!-- 		INSERT INTO Community.USER_ROLE	( USER_ID, ROLE_ID ) -->
+<!-- 		SELECT USER_ID AS USER_ID, #ROLE_ID# AS ROLE_ID FROM Community.USER_ WHERE ACCOUNT = #ACCOUNT# AND PASSWORD = #PASSWORD# order by JOIN_DATE DESC LIMIT 1 -->
+<!-- 	</update> -->
+
+	<update id="insertUserRole" parameterClass="com.iVoting.dto.UserDTO">
+		INSERT INTO Community.USER_ROLE	( USER_ID, ROLE_ID )
+		SELECT USER_ID AS USER_ID, #roleId# AS ROLE_ID FROM Community.USER_ WHERE ACCOUNT = #account# AND PASSWORD = #password# order by JOIN_DATE DESC LIMIT 1
+	</update>
+	
+	
+	
+	<select id="getIow" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+		SELECT top 1 *
+		  FROM IOW.DBO.ORDER_R
+	</select>
+
+	<select id="getMySql" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+		select * from Community.USER_ROLE
+	</select>
+
+<!--     <resultMap class="com.iVoting.dto.UserDTO" id="tag">   -->
+<!-- 		<result property="userId" column=""/> -->
+<!-- 		<result property="account" column=""/> -->
+<!-- 		<result property="password" column=""/> -->
+<!-- 		<result property="passwordHint" column=""/> -->
+<!-- 		<result property="name" column=""/> -->
+<!-- 		<result property="status" column=""/> -->
+<!-- 		<result property="joinDate" column=""/> -->
+<!-- 		<result property="modifyDate" column=""/> -->
+<!-- 		<result property="modifyMan" column=""/> -->
+<!-- 		<collection property="roleList" resultMap="userRole"/>  -->
+<!--     </resultMap> -->
+    
+<!--     <resultMap id="userRole" class="com.iVoting.dto.UserRoleDTO"> -->
+<!-- 		<result property="roleId" column="ROLE_ID" /> -->
+<!-- 	</resultMap> -->
+    
+<!--     <select id="getActiveTag" resultMap="category"> -->
+<!-- 	   SELECT DISTINCT * -->
+<!--          FROM (SELECT C.CATEGORY_NAME, C.CATEGORY_ID, C.CATEGORY_ORDER, T.TAG_NAME, -->
+<!--                        T.TAG_ID, T.TAG_CODE, T.PARENT_ID, T.TAG_ORDER -->
+<!--                   FROM CE_TAG_CATEGORY C, CE_CATEGORY_FILTER F, CE_TAG T, -->
+<!--                        CE_TAG_PRODUCT TP -->
+<!--                  WHERE C.CATEGORY_ID = T.CATEGORY_ID -->
+<!--                    AND C.CATEGORY_ID = F.CATEGORY_ID -->
+<!--                    AND T.TAG_ID = TP.TAG_ID -->
+<!--                    AND F.CVEN_NUM = 7207 -->
+<!--                    AND C.ACTIVE = 1 -->
+<!--                    AND T.ACTIVE = 1) -->
+<!--         ORDER BY CATEGORY_ORDER, TAG_ORDER -->
+<!--     </select> -->
+</sqlMap>
