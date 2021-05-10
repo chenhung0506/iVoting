@@ -24,7 +24,7 @@ public class EnvInitializer implements ApplicationContextInitializer<Configurabl
 				env = "staging";
 
 			}
-
+			env = "local";
 			Map<String, Object> source = new HashMap<String, Object>();
 
 			source.put( "env.prefix", env );
