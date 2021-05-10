@@ -1,0 +1,48 @@
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 20px auto;
+	border: 1px solid rgba(55, 53, 54, 0.4);
+	border-radius: 3px;
+}
+
+.form-signin .form-control {
+	margin-bottom: 10px;
+}
+
+.footer {
+	background-color: #222;
+	color: #9d9d9d;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.breadcrumb {
+	margin-bottom: 0;	
+}
+
+#message {
+	text-align: center;	
+}
+
+#message .alert {
+	margin: 0 auto;
+	padding: 5px;
+}
+
+#data_table_wrapper {
+	margin-bottom: 40px;	
+}
+
+#source_form {
+	display: inline-block;	
+}
+
+.table_helper > * {
+	display: inline-block;	
+}
+
+.table_helper > button {
+	margin-top: 20px;
+    margin-bottom: 10px;	
+}

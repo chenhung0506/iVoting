@@ -1,0 +1,33 @@
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 整體環境統一基版 -->
+    <definition name="template" template="/WEB-INF/view/body/template.jsp">
+        <put-attribute name="resource" value="/WEB-INF/view/body/resource.jsp" />
+        <put-attribute name="header" value="/WEB-INF/view/body/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/view/body/footer.jsp" />
+        <put-attribute name="loading" value="/WEB-INF/view/body/loading.jsp" />
+    </definition>
+
+    <definition name="show.view" extends="template">
+        <put-attribute name="title" value="Show Employee" />
+        <put-attribute name="body" value="/WEB-INF/view/employee/user.jsp" />
+    </definition>
+
+    <definition name="login.view" extends="template">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/WEB-INF/view/employee/login.jsp" />
+    </definition>
+
+    <definition name="order.view" extends="template">
+        <put-attribute name="title" value="Order" />
+        <put-attribute name="body" value="/WEB-INF/view/employee/Order.jsp" />
+    </definition>
+
+    <definition name="lottery.view" template="/WEB-INF/view/lottery/lottery.jsp">
+<!--     	<put-attribute name="resource" value="/WEB-INF/view/body/resource.jsp" /> -->
+<!--     	<put-attribute name="loading" value="/WEB-INF/view/body/loading.jsp" /> -->
+    </definition>
+
+</tiles-definitions>

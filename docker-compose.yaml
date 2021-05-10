@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  tomcat:
+    image: tomcat:8.0
+    container_name: tomcat
+    restart: always
+    volumes:
+      - ./war:/usr/local/tomcat/webapps
+    ports:
+      - 8080:8080
+    networks:
+      - nginx
+networks:
+  nginx:
+    external: true
+    name: nginx

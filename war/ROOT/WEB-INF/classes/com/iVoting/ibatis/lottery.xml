@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="lottery">
+
+	<select id="queryAwardList" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+		SELECT LM_ID, NAME, PHONE, DISTRICT, ZIP, FLAG
+		  FROM LOTTERY_MEMBER
+		 WHERE FLAG IN <iterate property="FLAG" open="(" close=")" conjunction=",">#FLAG[]#</iterate>
+	</select>
+
+	<select id="drawReward" parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+		SELECT LM_ID, NAME, PHONE, DISTRICT, ZIP, FLAG, #PRIZE# AS PRIZE 
+		  FROM LOTTERY_MEMBER
+		 WHERE FLAG = '0'
+		 <isNotEmpty property="ZIP">
+		   AND ZIP = #ZIP#
+		 </isNotEmpty>
+		 ORDER BY RAND()
+		 LIMIT #LIMIT#
+	</select>
+
+	<update id="updateLotteryFlag" parameterClass="java.util.HashMap">
+		UPDATE Community.LOTTERY_MEMBER
+		   SET FLAG=#PRIZE#
+		 WHERE 1=1
+		 <isNotEmpty property="LM_ID_LIST">
+		 AND LM_ID IN
+		 	<iterate property="LM_ID_LIST" open="(" close=")" conjunction=",">
+		 		#LM_ID_LIST[]#
+		 	</iterate>
+		 </isNotEmpty>
+		 <isNotEmpty property="LM_ID">
+		  AND LM_ID=#LM_ID#
+		 </isNotEmpty>
+		 <isNotEmpty property="FLAG">
+		  AND FLAG=#FLAG#
+		 </isNotEmpty>
+	</update>
+
+
+</sqlMap>
